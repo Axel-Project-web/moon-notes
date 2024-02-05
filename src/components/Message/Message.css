@@ -1,0 +1,75 @@
+.msg-dashboard {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  background-color: hsla(0, 0%, 12%, 0.65);
+
+  z-index: 1;
+  backdrop-filter: blur(4px);
+
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  color: white; /* hereda */
+
+  transition-duration: 0.2s;
+}
+
+.msg-dashboard h1 {
+  font-size: 2.5vmax;
+  font-weight: normal;
+}
+
+.msg-dashboard h2 {
+  font-size: 1.38vmax;
+  font-weight: normal;
+}
+
+.keyboard-window {
+  gap: 15px;
+  display: flex;
+}
+
+.btn-not-delete,
+.btn-delete-all {
+  width: 100px;
+  height: 50px;
+
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+  cursor: pointer;
+
+  font-size: 16px;
+
+  transition-duration: 0.3s;
+}
+
+.btn-not-delete {
+  background-color: #252577;
+}
+.btn-not-delete:hover {
+  background-color: #383879;
+}
+.btn-delete-all {
+  background-color: #ff6961;
+}
+.btn-delete-all:hover {
+  background-color: #fa8e89;
+}
+
+.msgOpen {
+  transform: scale(100%);
+  opacity: 100%;
+}
+.msgClose {
+  transform: scale(0%);
+  opacity: 0%;
+}

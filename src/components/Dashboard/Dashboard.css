@@ -1,0 +1,166 @@
+.wrapper-dashboard {
+  width: 100%;
+  max-width: 600px;
+
+  position: absolute;
+  top: 5vmax;
+  right: 5.6vmax;
+
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-dashboard {
+  font-size: 2.9vmax;
+  font-family: inter;
+  font-weight: normal;
+
+  color: white;
+}
+
+.header-session {
+  width: 100%;
+  height: 58px;
+
+  border-radius: 5px;
+
+  background-color: #252577;
+
+  padding: 0px 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header */
+.current-session {
+  width: fit-content;
+  height: 42px;
+
+  gap: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-user {
+  width: 46px;
+  height: 46px;
+}
+
+.description-session {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.current-email {
+  font-size: 15px;
+  font-family: inter;
+
+  color: white;
+}
+
+.notification {
+  font-size: 12px;
+  font-family: inter;
+  color: #838383;
+}
+
+/* keyboard */
+
+.keyboard-session {
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+}
+.keyboard-session > button {
+  width: 37px;
+  height: 39px;
+
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  position: relative;
+
+  transition-duration: 0.3s;
+}
+.keyboard-session > button:hover {
+  background-color: #1b1b5c;
+  border-radius: 5px;
+}
+.btn-clear-all {
+  background-image: url(./assets/clearAll.svg);
+  position: relative;
+}
+.btn-logout {
+  background-image: url(./assets/exit.svg);
+}
+.btn-add {
+  background-image: url(./assets/add-icon.svg);
+}
+.btn-save {
+  background-image: url(./assets/save.svg);
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+.save {
+  animation-name: save;
+}
+.not-save {
+  animation-name: not-save;
+}
+@keyframes save {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #77dd77;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.empty-list-msg {
+  width: 100%;
+  text-align: center;
+
+  color: white;
+}
+
+@media (width <= 720px) {
+  .wrapper-dashboard {
+    position: absolute;
+    top: 20px;
+    right: auto;
+
+    padding: 20px;
+  }
+  .current-email {
+    font-size: 14px;
+  }
+  .notification {
+    font-size: 10px;
+  }
+}
+
+@media (width < 410px) {
+  .header-session {
+    height: auto;
+
+    padding: 10px 0px;
+
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+  }
+}

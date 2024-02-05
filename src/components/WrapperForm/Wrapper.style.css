@@ -1,0 +1,49 @@
+.wrapper-form {
+    width: fit-content;
+    height: 369px;
+
+    position: absolute;
+    right: 25vw;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3.5vmax;
+
+    filter: blur(100px);
+
+    animation-duration: 0.7s;
+    animation-name: aparicion;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+@keyframes aparicion {
+    from {
+        display: none;
+        filter: blur(100px);
+    } to {
+        filter: blur(0px);
+        display: flex;
+    }
+}
+
+@media (width <= 620px) {
+    .wrapper-form {
+        right: auto;
+    }
+}
+
+.titles {
+    width: auto;
+    color: white;
+}
+.main-title {
+    font-size: 4.4vmax;
+    font-weight: normal;
+}
+.sub-title {
+    font-size: 23px;
+    font-weight: normal;
+    padding-left: 2px;
+}
+

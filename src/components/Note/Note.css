@@ -1,0 +1,75 @@
+.wrapper-note {
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.note {
+  width: 100%;
+  max-width: 600px;
+  height: 60px;
+
+  display: flex;
+  gap: 15px;
+}
+
+.content-note {
+  width: 100%;
+  height: 100%;
+
+  padding-left: 20px;
+
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+  background-color: hsla(240, 53%, 31%, 0.363);
+
+  color: white;
+  font-size: 16px;
+
+  transition-duration: 0.2s;
+}
+.content-note::placeholder {
+  color: white;
+}
+.content-note:read-only {
+  border-left: 5px solid #252577;
+}
+.content-note:not(:read-only) {
+  border: 2px solid #252577;
+  border-left: 5px solid #252577;
+  box-shadow: 1px 1px 10px 0px #2f2f79, inset 1px 1px 10px 0px #2f2f79;
+}
+
+.btn-update-note,
+.btn-delete-note,
+.btn-save-note {
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+  transition-duration: 0.3s;
+
+  background-color: #252577;
+  flex: none;
+}
+:is(.btn-delete-note, .btn-update-note):hover {
+  background-color: #38387a;
+}
+
+.btn-delete-note {
+  background-image: url(./assets/delete.svg);
+}

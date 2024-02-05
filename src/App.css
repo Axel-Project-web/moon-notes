@@ -1,0 +1,23 @@
+.app {
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./assets/background.jpg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width <= 1080px) {
+  .app {
+    background-position: right;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

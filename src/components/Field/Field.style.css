@@ -1,0 +1,63 @@
+.wrapper-fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.field > span {
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.wrapper-input {
+    display: flex;
+    width: 100%;
+}
+
+.wrapper-input > input {
+    position: relative;
+    height: 40px;
+
+    flex: 1;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    padding-left: 15px;
+
+    outline: none;
+    background: none;
+    border: 2px solid #252577;
+
+    color: white;
+    font-size: 15px;
+
+    position: relative;
+}
+.wrapper-input > input::placeholder {
+    color: #525252;
+    font-size: 14px;
+}
+
+.img-input {
+    background-color: #252577;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    padding: 0px 6px 0px 4px;
+}
+
+@media (width <= 620px) {
+    .field > span {
+        font-size: 14px;
+    }
+}
