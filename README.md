@@ -1,6 +1,6 @@
 ## Moon notes
 ### Single Page Application (SPA) with registration system.
-The application consists of 4 main pages: home, login, singup and the notepad. 
+The application consists of 3 main pages: login, sing-in and the notepad. 
 ### Technologies used in the Frotend
  - [React](https://es.react.dev/) 
  - [TypeScript](https://www.typescriptlang.org/)
